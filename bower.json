@@ -1,5 +1,5 @@
 {
-  "name": "gallery-grid",
+  "name": "artifact-grid",
   "version": "1.0.3",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -10,7 +10,7 @@
     "polymer",
     "seed"
   ],
-  "main": "gallery-grid.html",
+  "main": "artifact-grid.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
@@ -19,7 +19,9 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0",
-    "grid-item": "jshcrowthe/grid-item"
+    "grid-item": "jshcrowthe/grid-item",
+    "layout": "Polymer/layout",
+    "iron-selector": "PolymerElements/iron-selector#~1.0.7"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
