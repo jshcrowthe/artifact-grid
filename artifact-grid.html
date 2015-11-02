@@ -51,7 +51,8 @@ Example:
       },
       artifacts: {
         type: Array,
-        value: function() { return []; }
+        value: function() { return []; },
+        observer: 'deselectAll'
       },
       selectedItems: {
         type: Array,
