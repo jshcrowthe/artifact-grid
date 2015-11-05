@@ -66,30 +66,6 @@ Example:
         computed: '_computeItemsFromNodes(_selectedNodes)'
       }
     },
-    created: function() {
-      console.info('created (this):', this);
-      try {
-        console.info('created:', this.artifacts);
-      } catch(e) {
-        console.info('created error:', e);
-      }
-    },
-    ready: function() {
-      console.info('ready (this):', this);
-      try {
-        console.info('ready:', this.artifacts);
-      } catch(e) {
-        console.info('ready error:', e);
-      }
-    },
-    attached: function() {
-      console.info('attached (this):', this);
-      try {
-        console.info('attached:', this.artifacts);
-      } catch(e) {
-        console.info('attached error:', e);
-      }
-    },
     _computeItemsFromNodes: fetchGridItemChild,
     _updateStyles: function() {
       // This is a built in Polymer Function to force CSS property/mixin updating within this component
