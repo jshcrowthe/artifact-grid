@@ -21,6 +21,11 @@ grid-item:hover {
   margin: 8px 10px 13px;
 }
 
+grid-item {
+  --grid-item-card-width: calc(46vw - 20px);  
+}
+
+
 .check-icon {
   width:25px;
   height:25px;
