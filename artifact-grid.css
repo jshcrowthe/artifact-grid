@@ -1,12 +1,18 @@
 :host {
   display:block;
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 .check-icon:hover,
 grid-item:hover {
   cursor: pointer;
+}
+
+.items-wrap {
+  height: 100%;
+  overflow-y: scroll;
+  background: #ECEBEA;
 }
 
 .item {

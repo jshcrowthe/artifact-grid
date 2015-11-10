@@ -24,19 +24,17 @@ Example:
 @hero hero.svg
 -->
 <dom-module id="artifact-grid">
-<link rel="import" type="css" href="styles.css">
+<link rel="import" type="css" href="artifact-grid.css">
   <template>
-    <div class="layout horizontal wrap">
-      <!-- On Select And Deselect Events Manually Update Styles -->
-      <iron-selector id='selector' selected-items='{{_selectedNodes}}' attr-for-selected='data-uid' multi on-iron-select='_updateStyles' on-iron-deselect='_updateStyles'>
-        <template is='dom-repeat' items='{{artifacts}}' as='artifact'>
-          <div class="item" data-uid$='[[artifact.id]]'>
-            <grid-item data='[[artifact]]'></grid-item>
-            <i class="check-icon"></i>
-          </div>
-        </template>
-      </iron-selector>
-    </div>
+    <!-- On Select And Deselect Events Manually Update Styles -->
+    <iron-selector class="items-wrap layout horizontal center-justified wrap" id='selector' selected-items='{{_selectedNodes}}' attr-for-selected='data-uid' multi on-iron-select='_updateStyles' on-iron-deselect='_updateStyles'>
+      <template is='dom-repeat' items='{{artifacts}}' as='artifact'>
+        <div class="item" data-uid$='[[artifact.id]]'>
+          <grid-item data='[[artifact]]'></grid-item>
+          <i class="check-icon"></i>
+        </div>
+      </template>
+    </iron-selector>
   </template>
 </dom-module>
 
