@@ -18,7 +18,7 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0",
+    "polymer": "Polymer/polymer#~1.2.2",
     "grid-item": "jshcrowthe/grid-item",
     "layout": "Polymer/layout",
     "iron-selector": "PolymerElements/iron-selector#~1.0.7"
@@ -28,6 +28,6 @@
     "web-component-tester": "*"
   },
   "resolutions": {
-    "polymer": "~1.2.0"
+    "polymer": "~1.2.2"
   }
 }
