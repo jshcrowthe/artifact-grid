@@ -19,7 +19,6 @@ grid-item:hover {
 }
 
 .items-wrap {
-  height: 100%;
   align-content: flex-start;
 }
 
